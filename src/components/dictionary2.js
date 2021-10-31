@@ -8,10 +8,10 @@ function Dictionary2() {
   };
   const [sentence, setSentence] = useState("");
   const correctMe = (e) => {
-    // setSentence(e.target.value);
+
     var word = e.target.value.split(" ");
 
-    // back to string
+   
     setSentence(word.join(" "));
     if (e.keyCode == 32) {
       //getting last word from array (word)
@@ -25,10 +25,9 @@ function Dictionary2() {
         word.push(correct);
         //reverting  back to string
         setSentence(word.join(" "));
-        console.log("if", sentence);
-        // setSentence(word.push(correction[notLast]).join(""));
+  
       }
-      //   console.log(notLast);
+     
     }
   };
   return (
@@ -48,5 +47,4 @@ function Dictionary2() {
 }
 
 export default Dictionary2;
-//1 store sentence as array and then join
-//1)if Keyboard ==space
+
